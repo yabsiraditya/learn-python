@@ -53,3 +53,4 @@ print('===== << =====')
 print('Nilai :', a, ' Binary :', format(a,'08b'))
 print('-------------------------- (<<)')
 print('Nilai :', c, ' Binary :', format(c,'08b'))
+
