@@ -13,6 +13,10 @@ window.title("Sapa Dia")
 namaBelakang = tk.StringVar()
 namaDepan = tk.StringVar()
 
+def btnClick():
+    pesan = f"Hallo {namaDepan.get()} {namaBelakang.get()} Gantenggg!"
+    showinfo(title="Sapa Dia!",message=pesan)
+
 
 # Frame Iput
 inputFrame = ttk.Frame(window)
@@ -37,10 +41,6 @@ namaBelakangEntry = ttk.Entry(inputFrame,textvariable=namaBelakang)
 namaBelakangEntry.pack(padx=10,fill="x",expand=True)
 
 # 5. Button
-def btnClick():
-    pesan = f"Hallo {namaDepan.get()} {namaBelakang.get()} Gantenggg!"
-    showinfo(title="Sapa Dia!",message=pesan)
-
 sapaButton = ttk.Button(inputFrame,text="Sapa!",command=btnClick)
 sapaButton.pack(fill="x",expand=True,padx=10,pady=10)
 
